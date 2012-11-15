@@ -252,4 +252,9 @@ public class DateOperations
         {
             return ((LastSunday(Year, Month) - FirstMonday(Year, Month)) / 7) + 1;
         }
+		
+		public DateTime RoundUp(this DateTime dateTime, TimeSpan timeSpan)
+		{
+			return new DateTime(((dateTime.Ticks + timeSpan.Ticks) / timeSpan.Ticks) * timeSpan.Ticks);
+		}
 }
