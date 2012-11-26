@@ -9,7 +9,7 @@ using log4net;
 /// </summary>
 public static class Logger
 {
-    private static List<ILog> _logs;
+    private static List<ILog> _logs; 
 
     public static ILog GenerateLog(string name)
     {
