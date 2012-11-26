@@ -6,7 +6,7 @@ using Ninject;
 
 public class NinjectServiceFactory
 {
-    private IKernel _kernel;
+    private IKernel _kernel; 
 
     [Inject]
     public NinjectServiceFactory(IKernel kernel)
