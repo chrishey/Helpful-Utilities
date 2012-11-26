@@ -7,7 +7,7 @@ using System.Reflection;
 
 public static class TextFileReader
 {
-    public static string Read(string fileName)
+    public static string Read(string fileName) 
     {
         try
         {
